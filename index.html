@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/geometry.png" type="image/x-icon">
+    <title>Geometry Genius</title>
+</head>
+<body>
+    
+    <!--  -->
+<header class="container mx-auto px-5">
+    <section class="flex justify-between items-center mt-12 bg-slate-200 py-4 px-10 rounded-xl">
+        <div>
+            <h1 class="lg:text-4xl text-2xl font-bold">Interactive</h1>
+        <h3 class="lg:text-2xl font-semibold text-slate-500">Geometry Genius</h3>
+    </div>
+    <div>
+        <button id="blog" class="bg-blue-600 hover:bg-blue-500 text-white text-xl px-8 py-3 rounded-xl">Blog</button>
+    </div>
+    </section>
+</header>
+<!--  -->
+<!--  -->
+<main class="container mx-auto mt-16 mb-20">
+    <section>
+<div class="flex gap-5 lg:flex-row flex-col container px-5">
+    <div class="flex flex-col gap-5">
+        <div id="bg-color-triangle" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-50px"  src="./media/triangle.png" alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Triangle</h2></div>
+        <div><p>Area (A) = 0.5× b × h</p></div>
+        <div><input id="b-or-d1" class="b-or-d1 bg-slate-200 w-14 h-8 px-1 mt-8" type="number" placeholder="b">
+        <p class="inline ml-2">cm</p>
+        <input id="h-or-d2" class="h-or-d2 bg-slate-200 w-14 h-8 px-1 ml-8" type="number" placeholder="h">
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="triangle-btn" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    <!--  -->
+    <div id="bg-color-rhombus" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-50px" src="./media/rhombus.png" alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Rhombus</h2></div>
+        <div><p>Area (A) = 0.5× d<sub>1</sub> × d<sub>2</sub></p></div>
+        <div><input class="b-or-d1 bg-slate-200 w-14 h-8 px-1 mt-8" type="number" placeholder="d1">
+        <p class="inline ml-2">cm</p>
+        <input class="h-or-d2 bg-slate-200 w-14 h-8 px-1 ml-8" type="number" placeholder="d2">
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="rhombus-btn" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div>
+        <div class=" flex flex-col gap-5">
+        <div id="bg-color-rectangle" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-96 h-48" src="./media/rectangle.png " alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Rectangle</h2></div>
+        <div><p>Area (A) =  W × I</p></div>
+        <div><input id="" class="w-or-p bg-slate-200 w-14 h-8 px-1 mt-8" type="number" placeholder="W">
+        <p class="inline ml-2">cm</p>
+        <input id="" class="l-or-b bg-slate-200 w-14 h-8 px-1 ml-8" type="number" placeholder="I">
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="rectangle-btn" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    <!--  -->
+    <div id="bg-color-pentagon" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-50px h-44" src="./media/pentagon.png " alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Pentagon</h2></div>
+        <div><p>Area (A) = 0.5× p × b</p></div>
+        <div><input class="bg-slate-200 w-14 h-8 px-1 mt-8" type="number" value="5" disabled>
+        <p class="inline ml-2">cm</p>
+        <input class="bg-slate-200 w-14 h-8 px-1 ml-8" type="number" value="7" disabled>
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="pentagon" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    </div>
+    </div>
+    <!--  -->
+    <div>
+        <div>
+        <div class=" flex flex-col gap-5">
+        <div id="bg-color-parallelogram" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-50px h-48" src="./media/parallelogram.png " alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Parallelogram</h2></div>
+        <div><p>Area (A) =  b × h</p></div>
+        <div><input class="w-or-b bg-slate-200 w-14 h-8 px-1 mt-8" type="number" placeholder="b">
+        <p class="inline ml-2">cm</p>
+        <input class="l-or-h bg-slate-200 w-14 h-8 px-1 ml-8" type="number" placeholder="h">
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="parallelogram-btn" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    <!--  -->
+    <div id="bg-color-ellipse" class="bg-color p-5 flex flex-col items-center border  rounded-xl">
+        <div><img class ="w-50px h-44" src="./media/ellipse.png" alt=""></div>
+        <div><h2 class="text-2xl font-semibold mt-8">Ellipse</h2></div>
+        <div><p>Area (A) =  <img class ="w-3 inline" src="./media/pi.png" class="w-3 inline" alt=""> ab</p></div>
+        <div><input class="bg-slate-200 w-14 h-8 px-1 mt-8" type="number" value="7" disabled>
+        <p class="inline ml-2">cm</p>
+        <input class="bg-slate-200 w-14 h-8 px-1 ml-8" type="number" value="11" disabled>
+        <p class="inline ml-2">cm</p></div>
+        <div><button id="ellipse" class="bg-blue-700 hover:bg-blue-600 text-white text-xl px-20 py-2 mt-10 rounded-xl">Calculate</button></div>
+    </div>
+    </div>
+    </div> 
+    </div>
+    
+<!-- th -->
+<div class="mx-auto container">
+        <div class="border lg:h-5/6 lg:w-5/1  rounded-xl container py-5">
+        <p class="text-center text-2xl font-bold mt-5">Area Calculation</p>
+        <hr class="w-52 pt-1 bg-slate-500 mx-auto">
+<div id="line-1">
+    <div id="result-triangle" class="flex lg:flex-row flex-col  items-center justify-center lg:gap-16 mt-5">
+  <p class="text-xl mr-2">1. Triangle <span id="calc-1">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+</div>
+<!--  -->
+<div id="line-2">
+    <div id="result-rhombus" class="flex lg:flex-row flex-col items-center justify-center lg:gap-12 mt-5">
+  <p class="text-xl mr-2">2. Rhombus <span id="calc-2">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+</div>
+       <!--  -->
+       <div id="line-3">
+         <div id="result-rectangle" class="flex lg:flex-row flex-col items-center justify-center lg:gap-10 mt-5">
+  <p class="text-xl mr-2">3. Rectangle <span id="calc-3">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+       </div>
+<!--  -->
+<div id="line-4">
+    <div id="result-parallelogram" class="flex lg:flex-row flex-col items-center justify-center lg:gap-5 mt-5">
+  <p class="text-xl">4. Parallelogram
+ <span id="calc-4">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+</div>
+<!--  -->
+<div id="line-5">
+    <div id="result-pentagon" class="flex lg:flex-row flex-col items-center justify-center lg:gap-12 mt-5 ">
+  <p class="text-xl mr-2">5. Pentagon
+ <span id="calc-5">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+</div>
+<!--  -->
+<div id="line-6">
+    <div id="result-ellipse" class="flex lg:flex-row flex-col items-center justify-center lg:gap-20 mt-5 ">
+  <p class="text-xl mr-2">6. Ellipse
+ <span id="calc-6">00</span> cm<sup>2</sup></p>
+  <button class="bg-slate-500 px-4 py-2 rounded-xl mt-2">convert to m<sup>2</sup></button>
+</div>
+</div>
+    </div>
+    </div>
+    <!-- th -->
+</div>
+    </section>
+</main>
+
+<!--  -->
+    <!--  -->
+<script src="./index.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
